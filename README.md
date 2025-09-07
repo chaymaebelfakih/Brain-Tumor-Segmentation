@@ -1,29 +1,50 @@
-# Brain Tumor Segmentation with MultiEncoder UNet and Wavelet Fusion
+# Segmentation des Tumeurs Cérébrales avec MultiEncoder UNet et Fusion par Ondelettes
 
-<h3 align="center">Conception d’un modèle de Deep Learning pour la segmentation d’IRM cérébrales 3D</h3>
+## Description
+Projet académique réalisé de Mars 2025 à Juillet 2025.  
+Conception d’un modèle de Deep Learning basé sur l’architecture **MultiEncoder UNet avec fusion par ondelettes** pour le traitement et la segmentation d’IRM cérébrales 3D afin de détecter différentes zones de tumeur.
 
----
+## Objectifs
+- Segmenter les différentes zones tumorales sur des IRM cérébrales 3D.
+- Utiliser une architecture avancée de Deep Learning pour améliorer la précision de segmentation.
+- Comprendre et implémenter la fusion multi-modale par ondelettes.
 
-## 🧾 About the Project
-Ce projet académique consiste à concevoir un modèle de Deep Learning basé sur l’architecture **MultiEncoder UNet** avec **fusion par ondelettes**, pour détecter différentes zones de tumeur cérébrale à partir d’IRM 3D.  
+## Technologies utilisées
+- **Langages** : Python  
+- **Frameworks** : TensorFlow, Keras  
+- **Bibliothèques** : Nibabel, NumPy, Pandas  
+- **Outils** : Jupyter Notebook, Matplotlib, Seaborn  
 
-**Période :** Mars 2025 – Juillet 2025  
-**Type :** Projet de fin d’études  
-**Objectif :** Segmentation précise des zones de tumeur (NCR/NET, ED, ET)
+## Méthodologie
+1. **Prétraitement des données** :  
+   - Normalisation des images IRM  
+   - Recadrage et redimensionnement  
+   - Augmentation des données (flip, translation, décalage d’intensité)
 
----
+2. **Conception du modèle** :  
+   - Implémentation du MultiEncoder UNet  
+   - Fusion des modalités IRM par ondelettes  
+   - Décodeur 3D pour la segmentation finale
 
-## 🛠 Technologies & Tools
-<p align="left"> 
-  <a href="https://www.python.org" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
-  <a href="https://www.tensorflow.org" target="_blank"><img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a>
-  <a href="https://keras.io" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/keras/keras-original.svg" alt="keras" width="40" height="40"/> </a>
-  <a href="https://numpy.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg" alt="numpy" width="40" height="40"/> </a>
-  <a href="https://pandas.pydata.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a>
-  <a href="https://nipy.org/nibabel/" target="_blank"><img src="https://nipy.org/nibabel/_static/images/nibabel_logo.png" alt="nibabel" width="40" height="40"/> </a>
-</p>
+3. **Entraînement** :  
+   - Fonction de perte hybride : Dice Loss + Binary CrossEntropy  
+   - Optimiseur Adam avec learning rate 1e-5  
+   - Validation à chaque époque
 
----
+4. **Évaluation** :  
+   - Mesures de performance : Dice Score, précision, rappel  
+   - Visualisation des résultats de segmentation sur les IRM
 
-## 📂 Project Structure
+## Résultats
+- Modèle capable de segmenter avec précision les zones tumorales sur les IRM 3D.
+- Amélioration notable de la segmentation grâce à la fusion par ondelettes.
 
+## Conclusion
+Ce projet m’a permis de :
+- Comprendre en profondeur la segmentation d’images médicales.  
+- Implémenter des architectures avancées de Deep Learning multi-modales.  
+- Expérimenter la fusion de données IRM par ondelettes pour améliorer les performances.
+
+## Auteur
+**Ait Belfakih Chaymae**  
+[LinkedIn](https://www.linkedin.com/in/chaymae-belfakih-b97226342/) | [Kaggle](https://www.kaggle.com/chaymaaitbelfakih)
