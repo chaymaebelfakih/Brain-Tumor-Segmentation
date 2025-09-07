@@ -31,7 +31,7 @@ Ce projet propose un modèle de Deep Learning basé sur l’architecture **Multi
 
 📷 *Exemple d’IRM multimodales et segmentation*  
 ![IRM Modalités](images/modalites.png)  
-![Exemple Segmentation](images/segmentation.png)  
+![Exemple Segmentation](images/coupes.png)  
 
 ---
 
@@ -47,8 +47,7 @@ Ce projet propose un modèle de Deep Learning basé sur l’architecture **Multi
 - Module d’Attention Contextuelle (**GCAM**) pour capturer les dépendances globales  
 - Décodeur 3D avec **skip connections fusionnées**  
 
-📐 *Schéma du modèle*  
-![Architecture MultiEncoder UNet](images/architecture.png)  
+
 
 ### 🔹 Entraînement
 - Fonction de perte hybride : **BCEDiceLoss (BCE + Dice Loss)**  
@@ -66,8 +65,7 @@ Ce projet propose un modèle de Deep Learning basé sur l’architecture **Multi
 - La combinaison **WFM + GCAM** a permis une **amélioration significative du Dice Score** et une **réduction de la distance HD95**.  
 - La **fusion tardive** (multi-encodeurs + ondelettes) donne de meilleures performances que la fusion précoce.  
 
-📈 *Exemple de segmentation prédite vs vérité terrain*  
-![Résultats Segmentation](images/results.png)  
+
 
 ---
 
